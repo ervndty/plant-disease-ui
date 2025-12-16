@@ -157,7 +157,7 @@ const Dashboard = () => {
           <div>
             <h1 className="text-3xl font-bold text-foreground mb-2">
               Selamat Datang di{" "}
-              <span className="text-gradient">PlantCare AI</span>
+              <span className="text-gradient">AgroVision AI</span>
             </h1>
             <p className="text-muted-foreground">
               Pelajari berbagai penyakit tanaman dan cara pencegahannya

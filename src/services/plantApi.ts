@@ -1,25 +1,36 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8000';
+const API_URL = 'http://202.10.38.82:8000';
 
 export interface DetectionResponse {
   disease: string;
   confidence: number;
-  severity: 'low' | 'medium' | 'high';
+  severity: string;
   description: string;
   symptoms: string[];
   treatment: string[];
 }
 
-export const detectPlantDisease = async (imageFile: File): Promise<DetectionResponse> => {
+interface DetectionApiResponse {
+  status: string;
+  result: DetectionResponse;
+}
+
+export const detectPlantDisease = async (
+  imageFile: File
+): Promise<DetectionResponse> => {
   const formData = new FormData();
   formData.append('file', imageFile);
 
-  const response = await axios.post<DetectionResponse>(`${API_URL}/detect`, formData, {
-    headers: {
-      'Content-Type': 'multipart/form-data',
-    },
-  });
+  const response = await axios.post<DetectionApiResponse>(
+    `${API_URL}/predict`,
+    formData,
+    {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    }
+  );
 
-  return response.data;
+  return response.data.result;
 };

@@ -80,7 +80,7 @@ export default function Index() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6"
             >
               <Leaf className="w-4 h-4" />
-              <span>Powered by AI Technology</span>
+              <span>Powered by AgroVision AI</span>
             </motion.div>
 
             <motion.h1
@@ -136,7 +136,7 @@ export default function Index() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Mengapa Memilih PlantCare AI?
+              Mengapa Memilih AgroVision AI?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Solusi modern untuk perawatan tanaman Anda dengan teknologi terdepan
@@ -244,10 +244,10 @@ export default function Index() {
               <div className="p-1.5 rounded-lg bg-primary/10">
                 <Leaf className="w-5 h-5 text-primary" />
               </div>
-              <span className="font-bold text-foreground">PlantCare AI</span>
+              <span className="font-bold text-foreground">AgroVision AI</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              © 2024 PlantCare AI. Deteksi penyakit tanaman dengan teknologi AI.
+              © 2025 AgroVision AI. Deteksi penyakit tanaman dengan teknologi AI.
             </p>
           </motion.div>
         </div>

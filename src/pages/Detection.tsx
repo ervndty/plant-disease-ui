@@ -86,7 +86,7 @@ const Detection = () => {
           <div className="text-center max-w-2xl mx-auto animate-fade-in">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
               <Sparkles className="w-4 h-4" />
-              <span>Powered by AI</span>
+              <span>Powered by AgroVision AI</span>
             </div>
             <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 leading-tight">
               Deteksi Penyakit Tanaman{' '}
