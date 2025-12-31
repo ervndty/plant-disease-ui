@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://202.10.38.82:8000';
+const API_URL = 'https://apiplantdisease.kusumanoor.com/';
 
 export interface DetectionResponse {
   disease: string;
